@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import youtube from "./API/youtube";
+import "./styles.css";
 
 import {SearchBar, VideoDetails, VideoList} from "./components";
 
@@ -37,7 +38,7 @@ class App extends React.Component {
                            <SearchBar onFormSubmit = {this.handleSubmit}/>
                         </Grid>
 
-                        <Grid item xs = {8}>
+                        <Grid item xs = {6} style = {{padding: "2vw", backgroundColor: "#333", marginLeft: "2vw", borderRadius: "10px"}}>
                            <VideoDetails video = {selectedVideo}/>
                         </Grid>
 

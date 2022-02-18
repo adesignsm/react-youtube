@@ -1,0 +1,11 @@
+body, html {
+  padding: 1vw;
+  margin: 0;
+  background: #3F51B5;
+  overflow: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
