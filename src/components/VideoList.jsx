@@ -7,7 +7,7 @@ const VideoList = ({videos, onVideoSelect}) => {
     const listOfVideos = videos.map((video, id) => <VideoItem onVideoSelect = {onVideoSelect} key = {id} video = {video}/>);
 
     return (
-        <Grid container spacing = {10} style = {{padding: "2vw", backgroundColor: "#333", borderRadius: "10px", marginLeft: "-4vw"}}>
+        <Grid container spacing = {10} style = {{padding: "2vw", backgroundColor: "#333", borderRadius: "10px", marginLeft: "0vw"}}>
             {listOfVideos}
         </Grid>
     )
