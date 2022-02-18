@@ -24,7 +24,11 @@ class SearchBar extends React.Component {
 
         return (
             <Paper className = "search-bar" elevation = {6} style = {{padding: "1vw", backgroundColor: "#333"}}>
-                <Typography variant = "h3" color = "secondary" style = {{fontWeight: "lighter", color: "#fff"}}> Custom Youtube App </Typography>
+                <Typography variant = "h3" color = "secondary" style = {{fontWeight: "lighter", color: "#fff"}}> 
+                    Custom Youtube App 
+                    <Typography variant = "h6" style = {{color: "#3F51B5"}}> Built with react & MUI, youtube API </Typography>
+                </Typography>
+
                 <form className = "form-input" onSubmit = {this.handleSubmit}>
                     <TextField fullWidth label = "Search A Video" onChange = {this.handleChange}/>
                 </form>
